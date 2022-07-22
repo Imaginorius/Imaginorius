@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #102633;
+    --second-color: #0c1f28;
+    --button-color: #33c1bd;
+    --primary-font: "Bebas Neue", cursive;
+    --second-font: "Noto Sans Display", sans-serif;
+}
+
+
+
+.formaexpe {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+    
+}
+
+#formation {
+    grid-column: 1/2;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+}
+
+#formation_contenu {
+    position: relative;
+}
+
+.formation_contenu, h1 {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#formation_list li {
+    font-family: var(--second-font);
+    list-style-type: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.formation_listdate {
+    font-family: var(--primary-font);
+    font-size: 1.3em;
+    position: relative;
+}
+
+.formation_listdate::before {
+    content: "";
+    position: absolute;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #33c1bd;
+    border-radius: 0.4em;
+    left: -19px;
+    top:9px
+}
+
+#formation_list::before {
+    content: "";
+    height: 80%;
+    position: absolute;
+    border: 1px solid var(--button-color);
+    left: -5px;
+}
+#experience {
+    grid-column: 2/3;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    box-shadow: inset -2px 1px 4px 3px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+}
+
+#experience_contenu {
+    position: relative;
+}
+
+.experience_liste {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.experience_liste::before {
+    content: "";
+    height: 33%;
+    position: absolute;
+    border: 1px solid var(--button-color);
+    left: -5px
+}
+.experience_liste li {
+    margin-left: 10px;
+    list-style-type: none;
+    position: relative;
+}
+
+.experience_liste h2 {
+    font-size: 1.2em;
+}
+.experience_contenu li {
+    font-family: var(--second-font);
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.experience_listedate {
+    font-family: var(--primary-font);
+    font-size: 1.3em;
+}
+
+.experience_listedate::before {
+    content: "";
+    position: absolute;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #33c1bd;
+    border-radius: 0.4em;
+    left: -19px;
+    top:9px
+}
+
+#competence {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    height: auto;
+
+}
+
+#competence h1 {
+    font-family: var(--primary-font);
+    font-size: 2em;
+}
+
+.gallerie {
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    height: auto;
+    
+}
+
+.gallerie_competence img {
+    width: 100px;
+}
+
+.gallerie_competence, h2 {
+    font-family: var(--primary-font);
+}
+
+@media screen and (max-width:900px) {
+
+    #backgroundM {
+        top: 0;
+    }
+
+    .formaexpe {
+        grid-template-columns: 1fr;
+    }
+
+    #formation {
+        height: 400px;
+    }
+
+    #experience {
+        grid-column: 1/2;
+    }
+
+    .gallerie {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

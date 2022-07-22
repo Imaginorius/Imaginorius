@@ -1,0 +1,1020 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #102633;
+    --second-color: #0c1f28;
+    --button-color: #33c1bd;
+    --primary-font: "Bebas Neue", cursive;
+    --second-font: "Noto Sans Display", sans-serif;
+}
+
+html {
+    background: rgb(240, 245, 240);
+    background: linear-gradient(
+        90deg,
+        rgba(240, 245, 240, 1) 0%,
+        rgba(240, 244, 240, 1) 48%,
+        rgba(238, 222, 232, 1) 100%
+    );
+}
+
+#conteneur {
+    width: 95%;
+    max-width:1350px;
+    margin: auto;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+}
+
+#backgroundM {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: 19;
+    width: 95%;
+    max-width:1350px;
+    position: fixed;
+}
+
+header {
+    top: 0;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: 20;
+    width: 95%;
+    max-width:1350px;
+    position: fixed;
+    justify-content: center;
+   
+}
+
+#headerinside {
+    display: flex;
+    background-color:var(--primary-color);
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+#logo {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.logo_imaginario {
+    width: 140px;
+}
+
+#menu {
+    margin-top: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu ul {
+    display: flex;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+}
+
+#menu li {
+    list-style-type: none;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu li:hover {
+    color: var(--button-color);
+}
+
+#intro {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+#hamburger {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    top:10px;
+    right: 30px;
+    display: none;
+}
+
+#rectan1, #rectan2, #rectan3 {
+    transition: 0.3s;
+}
+
+.displaychange #rectan1 {
+ transform: rotate(-45deg)  translate(-14px, 8px);
+ transform-box: fill-box;
+ transform-origin: 50% 50%;
+}
+
+.displaychange #rectan2{
+    fill-opacity: 0;
+}
+
+.displaychange #rectan3 {
+    transform: rotate(45deg) translate(-12px, -4px);
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+}
+
+.demicercle {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#intro h1 {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    padding: 0px 50px 0px 50px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#intro p {
+    font-family: var(--second-font);
+    font-size: 1rem;
+    padding: 0px 50px 0px 50px;
+    text-align: left;
+}
+
+#button {
+    margin-top: 30px;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: #33c1bd;
+    border: 5px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    font-family: var(--primary-font);
+    width: 100px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#intro_image {
+    z-index: 4;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-color: var(--second-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -2px 6px 15px 8px rgba(0, 0, 0, 0.45);
+}
+
+#EncreCiel {
+    z-index: 99;
+    position: absolute;
+}
+
+
+.cosmos {
+  
+    z-index: 1;
+    animation-name: transcosmos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-out;
+    
+}
+
+@keyframes transcosmos {
+    0% {
+        transform: translate(10px, 10px);
+   
+    }
+
+    100% {
+       transform: translate(-10px, -5px);
+    }
+}
+
+.etoilehaut {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 50px;
+    animation-name: etoileh;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+
+}
+
+@keyframes etoileh{
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.etoilebas {
+    position: absolute;
+    bottom: 50px;
+    left: 45%;
+    width: 50px;
+}
+
+.etoiledroite {
+    position: absolute;
+    width: 40px;
+    top: 35%;
+    right: 10%;
+    animation-name: etoiled;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in;
+}
+
+@keyframes etoiled {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(160deg);
+    }
+}
+
+.etoilegauche {
+    position: absolute;
+    width: 40px;
+    top: 30%;
+    left: 20%;
+    animation-name: etoileg;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes etoileg {
+    0% {
+        
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(4px, 5px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: rotate(160deg);
+        opacity: 0;
+    }
+}
+
+
+
+#flamme {
+    animation-name: flamme;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-out;
+}
+
+#flamme1 {
+    animation-name: flamme1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#flamme2 {
+    animation-name: flamme2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#nuage1 {
+    animation-name: nuage1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#nuage {
+    animation-name: nuage;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#aiguille {
+    animation-name: aiguille;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transition: ease-in-out;
+}
+
+#cadrant {
+    animation-name: cadrant;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    transition: ease-in-out;
+}
+
+#cadrant1 {
+    animation-name: cadrant1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    transition: ease-in-out;
+}
+
+#flammesuppport {
+    animation-name: flammesupport;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#cascade {
+    animation-name: cascade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#grosnuage3 {
+    width: 80%;
+    animation-name: grosnuage3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-out;
+}
+
+#potd_x5F_dencre {
+    animation-name: pot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#encre,
+#bordurepotdessous,
+#bordurepot,
+#chute,
+#chute1 {
+    animation-name: encre;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+
+#reflet {
+    animation-name: reflet;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: ease-in;
+}
+
+#reflet1 {
+    animation-name: reflet1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: ease-in;
+}
+
+#reflet2 {
+    animation-name: reflet2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: ease-in;
+}
+
+#reflet3 {
+    animation-name: reflet3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: ease-in;
+}
+
+@keyframes flamme {
+    0% {
+        transform: translateY(10px);
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes flamme1 {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes flamme2 {
+    0% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes flammesupport {
+    0% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(4px);
+    }
+}
+
+@keyframes nuage1 {
+    0% {
+        transform: translateX(7px);
+    }
+
+    100% {
+        transform: translateX(15px);
+    }
+}
+
+@keyframes nuage {
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes aiguille {
+    0% {
+        transform: rotate(0);
+    }
+    30% {
+        transform: rotate(50deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cadrant {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cadrant1 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes cascade {
+    0% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes grosnuage3 {
+    0% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes pot {
+    0% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes encre {
+    0% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes reflet {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(100px);
+        opacity:0.1
+    }
+
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+@keyframes reflet1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(100px);
+        opacity:0.6
+    }
+
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+@keyframes reflet2 {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(30px);
+        opacity: 0.6;
+    }
+
+    75% {
+        transform: translateY(80px);
+        opacity: 0.1;
+    }
+
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+@keyframes reflet3 {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+img.vague {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    filter: drop-shadow(0.2 0 0.1rem #000);
+    z-index: 2;
+    height: 147px;
+}
+
+img.vague1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 147px;
+}
+
+#apropos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+
+#a_proposimage {
+    grid-column: 1/2;
+    background-color: var(--primary-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -2px 6px 15px 8px rgba(0, 0, 0, 0.45);
+}
+#a_proposimage h2 {
+    z-index: 11;
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    color: #fff;
+}
+.macarthur {
+    z-index: 10;
+    margin-top: 50px;
+    position: absolute;
+}
+.demicercle1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+
+.vaguehautdb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 8;
+    height: 147px;
+}
+
+#a_propopresent {
+    grid-column: 2/3;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    padding: 20px;
+}
+
+#a_propopresent_contenu {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px;
+}
+
+#a_propopresent_contenu h2 {
+    font-family: var(--second-font);
+    font-size: 1.25em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#a_propopresent h1 {
+    font-family: var(--primary-font);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#a_propopresent p {
+    font-family: var(--second-font);
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-align: left;
+    width: 100%;
+}
+
+ #button_apropos {
+    margin-top: 30px;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 5px solid var(--button-color);
+    border-radius: 12px;
+    color: #000;
+    font-family: var(--primary-font);
+    width: 100px;
+    font-size: 1.2rem;
+    align-self: center;
+    text-align: center;
+}
+
+.vaguehautd {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    height: 147px;
+}
+
+.vaguebasg {
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    height: 147px;
+}
+
+#portfolio {
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset -2px 6px 15px 8px rgba(0, 0, 0, 0.45);
+}
+
+#portfolio h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-family: var(--primary-font);
+    text-align: left;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#gallerie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-self: center;
+    margin-bottom: 10px;
+    
+}
+
+.card_gallerie {
+    width: 450px;
+    height: 250px;
+    border: 5px solid #fff;
+    background-color: #33c1bd;
+    border-radius: 25px;
+}
+
+
+.card_gallerie img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--primary-color);
+    margin-top: 20px;
+  
+}
+
+#contact_info {
+    background-color: #fff;
+    grid-column: 1/2;
+    padding: 40px;
+    display: flex;
+    position: relative;
+}
+
+#contact_infocontenu {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_info h1 {
+    font-family: var(--primary-font);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#contact_info p {
+    font-family: var(--second-font);
+    font-size: 1em;
+    text-align: left;
+    padding: 4px;
+}
+
+#contact_image {
+    position: relative;
+    grid-column: 2/3;
+    background-color: rgb(12, 31, 40, 0.8);
+    box-shadow: inset -2px 6px 10px 8px rgba(0, 0, 0, 0.45);
+}
+
+.cosmos_info {
+    object-fit: contain;
+}
+
+.mail {
+
+    color:var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.4em;
+}
+
+.mail:hover {
+    color: var(--button-color);
+}
+
+.potdencre {
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    left: 5%;
+}
+
+
+
+
+footer {
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    height: 100px;
+}
+
+@media  screen and (max-width:1070px) {
+    #logo {
+        left: 25px;
+    }
+
+    .logo_imaginario {
+        width: 90px;
+    }
+
+    .demicercle {
+        width: 160px;
+        height: 110px;
+    }
+
+   #intro h1 {
+       line-height: 1;
+       margin-top: 20%;
+       font-size: 1.7rem;
+   }
+
+   #intro p {
+       margin-top: 10px;
+       font-size: 1rem;
+   }
+
+    .macarthur {
+       max-width: 303px;
+   }
+
+   #gallerie {
+       gap: 15px;
+   }
+
+   .card_gallerie {
+       width: 380px;
+   }
+
+
+}
+
+@media screen and (max-width:900px) {
+
+    .main {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+    #backgroundM {
+        background-color: var(--primary-color);
+        height: 65px;
+    }
+    header {
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #headerinside {
+       background-color: rgb(16, 38, 51, 0.1);
+    }
+  
+
+    #hamburger {
+        display: block;
+    }
+
+  
+    #menu {
+    
+        width: 100%;
+        display: none;
+        transition: 0.3s;
+    }
+    #menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu ul li {
+        margin-top: 30px;
+    }
+
+
+    .logo_imaginario {
+        width: 90px;
+    }
+
+    .demicercle {
+        width: 160px;
+        height: 110px;
+    }
+
+    #intro {
+        height: 600px;
+    }
+
+    #intro_image {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #EncreCiel {
+        height: 500px;
+    }
+
+    .macarthur {
+        margin-top: -40px;
+    }
+
+    #apropos {
+       grid-template-columns: 1fr;
+    }
+
+    #a_propopresent {
+        grid-column: 1/2;
+
+    }
+    
+    #gallerie {
+        grid-template-columns: 1fr;
+    }
+
+    #contact {
+        grid-template-columns: 1fr;
+    }
+
+    #contact_image {
+        grid-column: 1/2 ;
+
+    }
+
+  
+}
+
+
+
+
+/*<------------------------------------------------------>*/
