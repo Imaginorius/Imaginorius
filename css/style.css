@@ -1017,6 +1017,10 @@ footer {
 
 @media screen and (max-width:400px) {
 
+    #EncreCiel {
+        height: 400px;
+    }
+
     img.vague {
         width: 80%;
     }
