@@ -1015,6 +1015,33 @@ footer {
 }
 
 
+@media screen and (max-width:400px) {
+
+    img.vague {
+        width: 80%;
+    }
+    
+    img.vague1 {
+       width: 80%;
+    }
+
+    .vaguehautdb {
+       width: 80%;
+    }
+
+    .macarthur {
+        width: 250px;
+    }
+
+    .card_gallerie {
+        width: 230px;
+        height: 200px;
+    }
+    
+  
+}
+
+
 
 
 /*<------------------------------------------------------>*/
