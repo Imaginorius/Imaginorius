@@ -798,6 +798,7 @@ img.vague1 {
     border: 5px solid #fff;
     background-color: #33c1bd;
     border-radius: 25px;
+    display: flex;
 }
 
 
