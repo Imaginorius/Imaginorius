@@ -798,13 +798,12 @@ img.vague1 {
     border: 5px solid #fff;
     background-color: #33c1bd;
     border-radius: 25px;
-    display: flex;
 }
 
 
 .card_gallerie img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     border-radius: 20px;
     object-fit: cover;
 }
