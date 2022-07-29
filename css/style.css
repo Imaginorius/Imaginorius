@@ -796,16 +796,28 @@ img.vague1 {
     width: 450px;
     height: 250px;
     border: 5px solid #fff;
-    background-color: #33c1bd;
+    background-color: var(--second-color);
     border-radius: 25px;
+    text-align: center;
+}
+
+.card_gallerie:hover {
+
+    border: 5px solid var(--button-color);
 }
 
 
 .card_gallerie img {
     width: 100%;
     height: 85%;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
+}
+
+.card_gallerie h3 {
+    font-family: var(--primary-font);
+    color: #fff;
+    margin-top: 1%;
 }
 
 #contact {
