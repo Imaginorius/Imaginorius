@@ -809,7 +809,7 @@ img.vague1 {
 
 .card_gallerie img {
     width: 100%;
-    height: 85%;
+    height: 75%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -818,7 +818,9 @@ img.vague1 {
     font-family: var(--primary-font);
     color: #fff;
     margin-top: 1%;
+    margin-bottom: 5%;
 }
+
 
 #contact {
     display: grid;
