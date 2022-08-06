@@ -123,18 +123,22 @@
 
 
 .one,.two,.three {
+   display: flex;
     grid-column: span 2;
 }
 
-.four {
-    grid-column: 1/4;
+
+
+
+.one .image_projet1 {
+    width: 100%;
+    object-fit: fill;
 }
 
-
-.five {
-    display: flex;
-    grid-column: 4/7;
-    grid-row: 2/3;
+.three .image_projet3 {
+    width: 100%;
+    object-fit: contain;
+    margin: 10px;
 }
 
 .image_projet {
@@ -144,6 +148,7 @@
 
 
 .six {
+    display: flex;
     grid-column: 1/7;
 }
 
@@ -169,7 +174,11 @@
     #box_image {
         z-index: 50;
         width: 70%;
-        height: 75%;
+        height: 85%;
+    }
+
+    .img_port {
+        object-fit:inherit;
     }
 
     .gallerie {
@@ -178,6 +187,14 @@
 
     .gallerie_projet {
         margin-bottom: 20px;
+    }
+
+    .six {
+        height: 300px;
+    }
+
+    .six .image_projet {
+        object-fit: cover;
     }
 
 }
