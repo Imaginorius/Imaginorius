@@ -199,11 +199,12 @@
     }
 
     .six {
-        height: 170px;
+        height: 250px;
     }
 
     .six .image_projet {
         object-fit: cover;
+        
     }
 
 }
