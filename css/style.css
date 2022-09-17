@@ -389,6 +389,7 @@ header {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     transition: ease-out;
+    height: auto;
 }
 
 #potd_x5F_dencre {
