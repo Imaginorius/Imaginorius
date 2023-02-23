@@ -674,6 +674,68 @@ img.vague1 {
     align-items: center;
     box-shadow: inset -2px 6px 15px 8px rgba(0, 0, 0, 0.45);
 }
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 1s;
+}
+
+.show.active{
+    filter: blur(0);
+    opacity: 1;
+}
+
+.active.transx {
+ animation: transx 1s ease-out;
+}
+
+.active.transx2 {
+    animation: transx2 1s ease-in;
+}
+
+@keyframes transx {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes transx2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card_gallerie :nth-child(2) {
+ transition-delay: 200ms;
+}
+
+.card_gallerie :nth-child(3) {
+    transition-delay: 400ms;
+
+}
+
+.card_gallerie :nth-child(4) {
+    transition-delay: 600ms;
+
+}
+
+
+
+
+
 #a_proposimage h2 {
     z-index: 11;
     font-family: var(--primary-font);
