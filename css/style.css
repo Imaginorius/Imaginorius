@@ -22,12 +22,16 @@ html {
         rgba(240, 244, 240, 1) 48%,
         rgba(238, 222, 232, 1) 100%
     );
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
 }
 
 #conteneur {
     width: 95%;
     max-width:1350px;
     margin: auto;
+    
 }
 
 .main {

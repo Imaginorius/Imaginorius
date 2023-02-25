@@ -96,7 +96,14 @@ var hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
+document.getElementById("button").addEventListener("click", callback, true);
 
+function callback() {
+   alert("clicked");
+
+   return false;
+
+}
 
 
 
