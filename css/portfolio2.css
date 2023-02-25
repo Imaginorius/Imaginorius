@@ -120,9 +120,7 @@
     border-radius: 10px;
 }
 
-.one,.two,.three,.four,.five,.six:hover {
-    border: 5px solid var(--button-color);
-}
+
 
 
 
