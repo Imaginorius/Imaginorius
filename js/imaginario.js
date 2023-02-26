@@ -96,7 +96,7 @@ var hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 /*
-var buttonclick = document.querySelectorAll(".button, .button_port, #button_apropos");
+var buttonclick = document.getElementById('button');
 let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
     console.log('button is clicked');
@@ -112,23 +112,6 @@ buttonclick.addEventListener('click',function checkClick(){
 })
 */
 
-function checkClick() {
-    var buttonclick = document.querySelectorAll(".button, .button_port, #button_apropos");
-    let buttonclickcheck =false;
-    buttonclick.addEventListener('click',() =>{
-        console.log('button is clicked');
-        if (buttonclickcheck){
-            console.log('button have been clicked');
-        }
-    
-        else {
-            buttonclick.style.zIndex='10';
-        }
-    
-        buttonclickcheck = true;
-    })
-    
-}
 
 
 
