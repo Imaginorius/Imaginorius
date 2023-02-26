@@ -106,6 +106,7 @@ buttonclick.addEventListener('click',function checkClick(){
     else {
         buttonclick.style.zIndex='10'
     }
+    buttonclick.removeProperty("z-index");
     buttonclickcheck = true;
 })
 
