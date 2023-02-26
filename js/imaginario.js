@@ -103,7 +103,7 @@ buttonclick.addEventListener('click',function checkClick(){
     if (buttonclickcheck){
         console.log('button have been clicked')
     }
-    else if (buttonclickcheck==false) {
+    else if (buttonclickcheck=false) {
         buttonclick.style.zIndex='10';  
     } else {
         buttonclick.style.zIndex=''; 
