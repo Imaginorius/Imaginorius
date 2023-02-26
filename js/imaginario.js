@@ -99,7 +99,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 document.getElementById("button").addEventListener("click", callback, true);
 
 function callback() {
-   console.log("clicked");
+   alert("clicked");
 
    return false;
 
