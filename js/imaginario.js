@@ -101,12 +101,16 @@ let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
     console.log('button is clicked');
     if (buttonclickcheck){
-        console.log('button have been clicked')
+        console.log('button have been clicked');
+        buttonclickcheck = true;
     }
 
-    else {
+    else if (buttonclickcheck) {
         buttonclick.style.zIndex='10';
-    }
+        buttonclickcheck = false;
+    } else {
+        buttonclick.style.zIndex='';
+    } 
 
     buttonclickcheck = true;
 })
