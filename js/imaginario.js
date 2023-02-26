@@ -104,9 +104,9 @@ buttonclick.addEventListener('click',function checkClick(){
         console.log('button have been clicked')
     }
     else {
-        buttonclick.style.zIndex='10'
+        buttonclick.style.zIndex='10';
     }
-    buttonclick.removeProperty("z-index");
+    buttonclick.style.zIndex="";
     buttonclickcheck = true;
 })
 
