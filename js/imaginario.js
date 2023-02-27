@@ -114,7 +114,7 @@ buttonclick.addEventListener('click',function checkClick(){
 });
 */
 
-
+/*
 var buttonclick = document.getElementById("button");
 let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
@@ -128,13 +128,13 @@ buttonclick.addEventListener('click',function checkClick(){
     else {
         buttonclick.style.zIndex='10';
     }
-    */
+    
     
 
     buttonclickcheck = false;
 });
 
-/*
+
 let buttonclickcheck = false;
 document.querySelectorAll("#button", "#button_apropos", ".button_port").forEach(function (i) {
     i.addEventListener('click', function () {
