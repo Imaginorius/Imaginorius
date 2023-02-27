@@ -13,8 +13,8 @@ document.querySelectorAll("li").forEach(n => n.addEventListener("click", () => {
 function hamburgerdisplay(x) {
     var ham = document.getElementById("menu");
     var head = document.querySelector("header");
-   
-   
+
+
 
 
 
@@ -22,20 +22,20 @@ function hamburgerdisplay(x) {
         x.classList.toggle("displaychange");
         ham.style.display = "none";
         head.style.backgroundColor = "";
-        head.style.height="";
-       
-       
+        head.style.height = "";
+
+
     }
 
     else {
         x.classList.toggle("displaychange");
         ham.style.display = "block";
         head.style.backgroundColor = "rgb(16, 38, 51, 0.9)";
-        head.style.height= "100vh";
-        
-      
-        
-        
+        head.style.height = "100vh";
+
+
+
+
     }
 
 
@@ -56,27 +56,27 @@ function displaymenu() {
     var head = document.querySelector("header");
     var burger = document.querySelectorAll(".barre_hamburger");
     var hamburg = document.getElementById("hamburger");
-   
-    
 
-    if (innerWidth > 900 ) {
+
+
+    if (innerWidth > 900) {
         head.style.backgroundColor = "";
         ham.style.display = "block";
-        burger.classList.remove("displaychange")    
+        burger.classList.remove("displaychange")
     }
 
     hamburg.classList.add("displaychange");
-    
-    if (innerWidth < 900 ) {
+
+    if (innerWidth < 900) {
         ham.style.display = "none";
         head.style.backgroundColor = "";
-        hamburg.classList.toggle("displaychange"); 
-      
+        hamburg.classList.toggle("displaychange");
+
     }
 
-    
-   
-    
+
+
+
 
 
 }
@@ -85,9 +85,9 @@ var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
         if (entry.isIntersecting) {
-            entry.target.classList.add("show","active");
+            entry.target.classList.add("show", "active");
         } else {
-            entry.target.classList.remove("show","active")
+            entry.target.classList.remove("show", "active")
         }
     });
 });
@@ -114,11 +114,22 @@ buttonclick.addEventListener('click',function checkClick(){
 
 
 
-
-document.querySelectorAll("#button","#button_apropos",".button_port").forEach(function(i){
-    i.addEventListener('click',function(){
+let buttonclickcheck = false;
+document.querySelectorAll("#button", "#button_apropos", ".button_port").forEach(function (i) {
+    i.addEventListener('click', function () {
         console.log('click');
+        if (buttonclickcheck) {
+            console.log('button have been clicked');
+        }
+
+        else {
+            document.querySelectorAll("#button", "#button_apropos", ".button_port").style.zIndex='10';
+        }
+
+       
+
     })
+    buttonclickcheck = true;
 });
 
 
