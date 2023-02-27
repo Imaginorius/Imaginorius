@@ -99,6 +99,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 var buttonclick = document.querySelectorAll("#button");
 let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
+    console.log('button is clicked');
     if (buttonclickcheck){
         console.log('button have been clicked');
     }
