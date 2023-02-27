@@ -95,7 +95,7 @@ var observer = new IntersectionObserver((entries) => {
 var hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-
+/*
 var buttonclick = document.getElementById("button");
 let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
@@ -104,15 +104,32 @@ buttonclick.addEventListener('click',function checkClick(){
     if (buttonclickcheck ===false){
         console.log('button not been clicked');
     }
-
+    
     else {
         buttonclick.style.zIndex='10';
     }
+    
 
     buttonclickcheck = false;
 });
+*/
+var buttonclick = document.getElementById("button");
+let buttonclickcheck =false;
+buttonclick.addEventListener('click',function checkClick(){
+    buttonclickcheck = true;
+    console.log('button is clicked');
+    if (buttonclickcheck ===false){
+        console.log('button not been clicked');
+    }
+    /*
+    else {
+        buttonclick.style.zIndex='10';
+    }
+    */
+    
 
-
+    buttonclickcheck = false;
+});
 
 /*
 let buttonclickcheck = false;
