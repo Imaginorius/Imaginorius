@@ -109,7 +109,7 @@ buttonclick.addEventListener('click',function checkClick(){
     }
 
     buttonclickcheck = true;
-})
+});
 
 
 
