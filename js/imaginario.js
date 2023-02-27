@@ -120,6 +120,7 @@ buttonclick.addEventListener('click',function checkClick(){
     console.log('button is clicked');
     if (buttonclickcheck ===false){
         console.log('button not been clicked');
+        buttonclick.style.zIndex='10';
     }
     /*
     else {
