@@ -112,6 +112,12 @@ buttonclick.addEventListener('click',function checkClick(){
 })
 */
 
+document.querySelectorAll("#button","#button_apropos",".button_port").forEach(function(i){
+    i.addEventListener('click',function(){
+        console.log('click');
+    })
+});
+
 
 
 
