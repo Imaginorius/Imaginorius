@@ -113,6 +113,8 @@ buttonclick.addEventListener('click',function checkClick(){
     buttonclickcheck = false;
 });
 */
+
+
 var buttonclick = document.getElementById("button");
 let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
