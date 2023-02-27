@@ -118,7 +118,7 @@ let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
     buttonclickcheck = true;
     console.log('button is clicked');
-    if (buttonclickcheck ===false){
+    if (buttonclickcheck ===true){
         console.log('button not been clicked');
         buttonclick.style.zIndex='10';
     }
