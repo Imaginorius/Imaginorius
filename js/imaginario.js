@@ -99,8 +99,8 @@ hiddenElements.forEach((el) => observer.observe(el));
 var buttonclick = document.getElementById("button");
 let buttonclickcheck =false;
 buttonclick.addEventListener('click',function checkClick(){
-    
-    if (buttonclickcheck){
+    buttonclickcheck = true;
+    if (buttonclickcheck != true){
        console.log('button is clicked');
     }
 
@@ -108,7 +108,7 @@ buttonclick.addEventListener('click',function checkClick(){
         buttonclick.style.zIndex='10';
     }
 
-    buttonclickcheck = true;
+    buttonclickcheck = false;
 })
 
 
