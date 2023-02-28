@@ -44,6 +44,7 @@ function hamburgerdisplay(x) {
         ham.style.display = "none"
         head.style.backgroundColor = "";
         x.classList.remove("displaychange");
+        head.style.height ="";
 
     }))
 
