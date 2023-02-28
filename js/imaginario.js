@@ -31,7 +31,7 @@ function hamburgerdisplay(x) {
         x.classList.toggle("displaychange");
         ham.style.display = "block";
         head.style.backgroundColor = "rgb(16, 38, 51, 0.9)";
-        head.style.height = "100vh";
+        head.style.height = "100%";
 
 
 
