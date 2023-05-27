@@ -744,10 +744,13 @@ img.vague1 {
     font-family: var(--primary-font);
     font-size: 3rem;
     color: #fff;
+    position: absolute;
+    top: 20%;
 }
 .macarthur {
     z-index: 2;
-    margin-top: 50px;
+    bottom: 2px;
+    width: 650px;
     position: absolute;
 }
 .demicercle1 {
