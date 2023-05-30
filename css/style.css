@@ -980,9 +980,18 @@ img.vague1 {
 
 
 footer {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
     margin-top: 20px;
     background-color: var(--primary-color);
     height: 100px;
+}
+
+.footerinfo{
+    font-family: var(--second-font);
+    font-size: 1em;
+    color: #fff;
 }
 
 @media  screen and (max-width:1070px) {
