@@ -934,6 +934,27 @@ img.vague1 {
     flex-direction: column;
 }
 
+.contactlist {
+    margin-top: 20px;
+}
+
+.contactlist li {
+    list-style-type: none;
+    
+}
+
+.contactlist_content {
+
+    color:var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.contactlist_content:hover {
+    color: var(--button-color);
+}
+
 #contact_info h1 {
     font-family: var(--primary-font);
     font-size: 2.5em;
@@ -958,16 +979,6 @@ img.vague1 {
     object-fit: contain;
 }
 
-.mail {
-
-    color:var(--primary-color);
-    font-family: var(--primary-font);
-    font-size: 1.4em;
-}
-
-.mail:hover {
-    color: var(--button-color);
-}
 
 .potdencre {
     position: absolute;
@@ -975,6 +986,7 @@ img.vague1 {
     bottom: 0;
     left: 5%;
 }
+
 
 
 
